@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/the-console.css" />
+    <script
+      src="https://kit.fontawesome.com/bd2f63886f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Jocode | 01. The Console</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>JOCODE</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="#">Learn</a>
+            <ul class="dropdown-content">
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Python</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container text-center">
+      <div class="row">
+        <div class="header-bar">
+          <p>Latihan</p>
+        </div>
+        <h1>01. The Console</h1>
+        <h2>Console Log</h2>
+        <p>
+          Dalam JavaScript, metode <code>console.log()</code> memberitahu konsol
+          web untuk mengeluarkan pesan. Kami akan sering menggunakan ini
+        </p>
+        <p>
+          Pesan yang ingin kita tampilkan harus berada di dalam tanda kurung
+          <code>(</code> <code>)</code> dan diapit tanda kutip. Bisa berupa
+          tanda kutip ganda <code>"</code> atau tanda kutip tunggal
+          <code>'</code>, namun tanda kutip pembuka dan penutupnya harus sama.
+        </p>
+        <p>Ini adalah contoh metode <code>console.log()</code></p>
+        <pre tabindex="0">
+                    <code class="hljs language-js" data-lang="js">
+                        <span class="hljs-built_in">console.log</span>(<span class="hljs-string">'Hello Jocode'</span>);</code>
+                </pre>
+        <p>
+          Pada contoh di atas, kita menginstruksikan program untuk mencetak
+          pesan. Teks hasil yang dicetak ke layar ini disebut sebagai output.
+        </p>
+        <p>Output dari contoh program di atas adalah:</p>
+        <pre tabindex="0">
+                <code class="hljs language-js" data-lang="js">
+                    Hello Jocode</code>
+            </pre>
+        <div class="header-bar">
+          <p>Instruksi</p>
+        </div>
+        <p>
+          Gunakan <code>console.log()</code> untuk menampilkan pesan “Halo
+          World!”
+        </p>
+      </div>
+      <div class="editor__wrap">
+        <div class="col">
+          <div class="editor">
+            <div class="header-bar-editor">
+              <p><i class="fab fa-js"></i> index.js</p>
+            </div>
+            <div class="editor__body">
+              <div id="editorCode" class="editor__code"></div>
+            </div>
+            <div class="editor__footer">
+              <div class="editor__footer--left">
+                <button class="editor__btn editor__run">Run ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="editor">
+            <div class="editor__console">
+              <div class="header-bar">
+                <p>Console</p>
+              </div>
+              <ul class="editor__console-logs"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="navigate">
+        <div class="navigate-left">
+          <button class="back">Back</button>
+        </div>
+        <div class="navigate-right">
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/ace-editor/src-min/ace.js"></script>
+    <script src="assets/js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="assets/js/ace-editor/src-min/ext-language_tools.js"></script>
+    <script src="assets/js/editor.js"></script>
+    <script src="assets/js/editor-console.js"></script>
+  </body>
+</html>
